@@ -1,1 +1,123 @@
-<p>home-page works!</p>
+
+
+
+<div class="option_box">
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; font-size: x-large;">Admin Login</button> &nbsp;&nbsp;&nbsp;
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; font-size: x-large">Customer Login</button> &nbsp;&nbsp;&nbsp;
+    <button onclick="document.getElementById('id03').style.display='block'" style="width:auto; font-size: x-large">Vendor Login</button> &nbsp;&nbsp;&nbsp;
+    <button onclick="document.getElementById('id04').style.display='block'" style="width:auto; font-size: x-large">Register</button> &nbsp;&nbsp;&nbsp;
+</div>
+
+<!-- LOGIN FORM FOR ADMIN-->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+    <h3> ADMIN Login</h3>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+<!-- LOGIN FORM FOR CUSTOMER-->
+<div id="id02" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+      </div>
+      <h3> Customer Login</h3>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+      </div>
+  
+      <div class="container" >
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+ <!-- LOGIN FORM FOR Vendor-->
+<div id="id03" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+      </div>
+      <h3> Vendor</h3>
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+
+      </div>
+  
+      <div class="container">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+   <!-- Register-->
+<div id="id04" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id04').style.display='none'" class="close" title="Close Modal">&times;</span>
+        
+      </div>
+      <h3> Register</h3>
+      <div class="container">
+        <label for="name"><b>Name</b></label>
+        <input type="name" placeholder="Enter name" name="name" required>
+
+        <label for="email"><b>Email</b></label>
+        <input type="email" placeholder="Enter Email" name="email" required>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Login</button>
+
+      </div>
+  
+      <div class="container">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+ 
+
