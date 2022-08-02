@@ -26,7 +26,7 @@ export class CustomerService {
     return this.http.get<Customer[]>(this.getAllCustomersApi+'?page='+page+'&size='+size);
    }
 
-   getOneCustomer(cid: number): Observable:<Customer>{
+   getOneCustomer(cid: number): Observable<Customer>{
     return this.http.get<Customer>(this.getOneCustomerApi+cid);
    }
 }
