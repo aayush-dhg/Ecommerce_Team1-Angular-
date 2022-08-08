@@ -7,6 +7,7 @@ import { HomePageComponent } from './components/home-page/home-page.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { CategoryComponent } from './components/category/category.component';
 import { CustomerComponent } from './components/customer/customer.component';
+import { CustomerListComponent } from './components/customer-list/customer-list.component';
 import { CustomerProductComponent } from './components/customer-product/customer-product.component';
 import { ProductComponent } from './components/product/product.component';
 import { VendorComponent } from './components/vendor/vendor.component';
@@ -19,6 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     UserInfoComponent,
     CategoryComponent,
     CustomerComponent,
+    CustomerListComponent,
     CustomerProductComponent,
     ProductComponent,
     VendorComponent
