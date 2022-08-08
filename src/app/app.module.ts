@@ -6,12 +6,13 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { CategoryComponent } from './components/category/category.component';
-import { CustomerComponent } from './components/customer/customer.component';
-import { CustomerListComponent } from './components/customer-list/customer-list.component';
+import { CustomerComponent } from './components/customer/customer/customer.component';
+import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
 import { CustomerProductComponent } from './components/customer-product/customer-product.component';
 import { ProductComponent } from './components/product/product.component';
 import { VendorComponent } from './components/vendor/vendor.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     CustomerListComponent,
     CustomerProductComponent,
     ProductComponent,
-    VendorComponent
+    VendorComponent,
+    CustomerAddComponent
   ],
   imports: [
     BrowserModule,
