@@ -6,17 +6,22 @@ import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { CategoryComponent } from './components/category/category.component';
-import { CustomerComponent } from './components/customer/customer.component';
-import { CustomerListComponent } from './components/customer-list/customer-list.component';
+import { CustomerComponent } from './components/customer/customer/customer.component';
+import { CustomerListComponent } from './components/customer/customer-list/customer-list.component';
 import { CustomerProductComponent } from './components/customer-product/customer-product.component';
 
 import { VendorComponent } from './components/vendor/vendor.component';
 import { HttpClientModule } from '@angular/common/http';
+
 import { ProductComponent } from './components/product/product/product.component';
 import { ProductAddComponent } from './components/product/product-add/product-add.component';
 import { ProductListComponent } from './components/product/product-list/product-list.component';
 import { ProductStatComponent } from './components/product/product-stat/product-stat.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CustomerAddComponent } from './components/customer/customer-add/customer-add.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -27,12 +32,19 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CustomerComponent,
     CustomerListComponent,
     CustomerProductComponent,
+    CustomerAddComponent,
+
    
     VendorComponent,
          ProductComponent,
          ProductAddComponent,
          ProductListComponent,
-         ProductStatComponent
+         ProductStatComponent,
+
+    ProductComponent,
+    VendorComponent,
+   
+
   ],
   imports: [
     BrowserModule,
