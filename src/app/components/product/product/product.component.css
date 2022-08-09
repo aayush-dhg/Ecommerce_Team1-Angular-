@@ -1,0 +1,13 @@
+.product-section{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 10px;
+  }
+.product-list{
+    width: 45%;
+    float: left;
+}
+.product-stat-add{
+    width: 50%;
+    float: right;
+}

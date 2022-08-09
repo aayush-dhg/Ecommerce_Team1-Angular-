@@ -1,0 +1,44 @@
+<span *ngIf="!(msg =='')">
+    {{msg}}
+</span>
+<form (submit) ="onFormSubmit()" [formGroup] = "productForm">
+    <label>Enter Product Name: </label>
+    <input type="text" name="name" formControlName="productName">
+    <span *ngIf="productForm.controls['productName'].invalid
+        && productForm.controls['productName'].touched">
+        <span *ngIf="productForm.controls['productName'].errors['required']"> Product Name is Required</span>
+        <span *ngIf="productForm.controls['productName'].errors['pattern']"> Pattern allowed: [a-zA-Z ]+</span>
+    </span>
+
+    <br /><br />
+    <label>Enter Product Quantity : </label>
+    <input type="text" name="quantity" formControlName="quantity">
+    <span *ngIf="productForm.controls['quantity'].invalid
+        && productForm.controls['quantity'].touched">
+        <span *ngIf="productForm.controls['quantity'].errors['required']"> Quantity is Required</span>
+        <span *ngIf="productForm.controls['quantity'].errors['pattern']"> Pattern allowed: [0-9 ]+</span>
+    </span>
+
+    <br /><br />
+    <label>Enter Price : </label>
+    <input type="text" name="price" formControlName="price">
+    <span *ngIf="productForm.controls['price'].invalid
+        && productForm.controls['price'].touched">
+        <span *ngIf="productForm.controls['price'].errors['required']"> price is Required</span>
+        <span *ngIf="productForm.controls['price'].errors['pattern']"> Pattern allowed: [0-9 ]+</span>
+    </span>
+
+    <br /><br />
+    <label>Enter Product Category: </label>
+    <input type="text" name="category" formControlName="category">
+    <span *ngIf="productForm.controls['category'].invalid
+        && productForm.controls['category'].touched">
+        <span *ngIf="productForm.controls['category'].errors['required']"> Product Category is Required</span>
+        <span *ngIf="productForm.controls['category'].errors['pattern']"> Pattern allowed: [a-zA-Z ]+</span>
+    </span>
+    <br /><br />
+  <input type="submit" value="Add Product" [disabled]="!productForm.valid">
+
+
+
+</form>
