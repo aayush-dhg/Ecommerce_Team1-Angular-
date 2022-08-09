@@ -1,1 +1,14 @@
-<p>customer-list works</p>
+<h1>Customer List</h1>
+
+<h3 *ngIf="!(error_msg == '')">
+    {{error_msg}}
+</h3>
+
+<div *ngFor="let c of customers">
+    Name: <strong>{{c.name}}</strong>
+    &nbsp;&nbsp;
+    Username: {{c.username}}
+    &nbsp;&nbsp;
+    Balance: ${{c.balance}}
+    <hr>
+</div>

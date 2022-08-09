@@ -12,7 +12,7 @@ import { CustomerProductComponent } from './components/customer-product/customer
 import { ProductComponent } from './components/product/product.component';
 import { VendorComponent } from './components/vendor/vendor.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CustomerAddComponent } from './customer/customer-add/customer-add.component';
+import { CustomerAddComponent } from './components/customer/customer-add/customer-add.component';
 
 @NgModule({
   declarations: [

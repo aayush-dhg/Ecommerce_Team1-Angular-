@@ -23,8 +23,8 @@ export class CustomerService {
     return this.http.post<Customer>(this.postApi, c);
   }
 
-  getAllCustomers(page: number, size: number): Observable<Customer[]> {
-    return this.http.get<Customer[]>(this.getAllCustomersApi + '?page=' + page + '&size=' + size);
+  getAllCustomers(): Observable<Customer[]> {
+    return this.http.get<Customer[]>(this.getAllCustomersApi);
   }
 
   getOneCustomer(cid: number): Observable<Customer> {

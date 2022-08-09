@@ -1,1 +1,48 @@
-<p>customer-add works!</p>
+<br />
+<span *ngIf="!(msg=='')">
+    {{msg}} 
+</span>
+
+<form (submit)="onFormSubmit()" [formGroup]="customerForm">
+    <label>Enter Name: </label>
+    <input type="text" name="name" formControlName="name">
+    <span *ngIf="customerForm.controls['name'].invalid && customerForm.controls['name'].touched">
+        <span *ngIf="customerForm.controls['name'].errors['required']"> Name is required</span>
+        <span *ngIf="customerForm.controls['name'].errors['pattern']"> Name should be only letters</span>
+    </span>
+    <br /> <br />
+
+    <label>Enter Username: </label>
+    <input type="text" name="username" formControlName="username">
+    <span *ngIf="customerForm.controls['username'].invalid && customerForm.controls['username'].touched">
+        <span *ngIf="customerForm.controls['username'].errors['username']"> Username is required</span>
+    </span>
+    <br /> <br />
+
+    <label>Enter Password: </label>
+    <input type="text" name="password" formControlName="password">
+    <span *ngIf="customerForm.controls['password'].invalid && customerForm.controls['password'].touched">
+        <span *ngIf="customerForm.controls['password'].errors['required']"> Password is required</span>
+    </span>
+    <br /> <br />
+
+    <label>Enter Balance: </label>
+    <input type="text" name="balance" formControlName="balance">
+    <span *ngIf="customerForm.controls['balance'].invalid && customerForm.controls['balance'].touched">
+        <span *ngIf="customerForm.controls['balance'].errors['required']"> Balance is required</span>
+        <span *ngIf="customerForm.controls['balance'].errors['pattern']"> Balance should be only numbers</span>
+    </span>
+    <br /> <br />
+
+    <label>Enter Security Question: </label>
+    <input type="text" name="question" formControlName="securityQuestion">
+    
+    <br /> <br />
+
+    <label>Enter Security Answer: </label>
+    <input type="text" name="answer" formControlName="securityAnswer">
+    
+    <br /> <br />
+
+    <input type="submit" value="Add customer" [disabled]="!customerForm.valid">
+</form>
